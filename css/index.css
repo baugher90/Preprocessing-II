@@ -1,3 +1,11 @@
+@keyframes morph {
+  0% {
+    background-color: #FFFFFF;
+  }
+  20% {
+    background-color: #C0C0C0;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -179,6 +187,11 @@ img {
   margin: 20px;
   margin-left: 20px;
 }
+.nav a:hover {
+  animation-name: morph;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -250,4 +263,19 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  border: 1px solid #17A2B8;
+  background: #17A2B8;
+  border-radius: 10px;
+  text-align: center;
+}
+.home .content-pick .destination .btn:hover {
+  color: #17A2B8;
+  background: #FFFFFF;
 }
