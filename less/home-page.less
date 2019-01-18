@@ -1,14 +1,18 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 2px dashed @navigation-border;
+
+  h1{
+    padding: 5px;
+  }
+}
+
 .home {
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    border-bottom: 2px dashed @navigation-border;
-
-    h1{
-      text-align: center;
-    }
+  @media @mobile {
+    padding: 20px;
   }
 
   .landing-content {

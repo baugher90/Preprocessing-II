@@ -203,14 +203,19 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home header {
+header {
   display: flex;
   justify-content: space-between;
   align-content: center;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home header h1 {
-  text-align: center;
+header h1 {
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .home {
+    padding: 20px;
+  }
 }
 .home .landing-content {
   border-bottom: 2px dashed #C0C0C0;
